@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "49066202949",
+    "project_id": "urbanstreet-31800",
+    "storage_bucket": "urbanstreet-31800.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:49066202949:android:6bc0ce4f4f087217da102c",
+        "android_client_info": {
+          "package_name": "com.flutterflow.OlympusPass"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "49066202949-j9ggj7s3t9laupnl5i324t0468f3rkd1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.flutterflow.OlympusPass",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "49066202949-12ljctgbanp5knbvulgpspdm2v7g4m5l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiWCQtH_7VCq7zXxwYy7zFaVLBjYk7QUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "49066202949-12ljctgbanp5knbvulgpspdm2v7g4m5l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "49066202949-4t6gsqb7v438b0ku0qb58sur3put5j34.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.flutterflow.UrbanStreet"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:49066202949:android:3e294a78f0982316da102c",
+        "android_client_info": {
+          "package_name": "com.flutterflow.UrbanStreet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "49066202949-rm0qujdb5ggh6v3ncq5edu705e7hstv4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.flutterflow.UrbanStreet",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "49066202949-12ljctgbanp5knbvulgpspdm2v7g4m5l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiWCQtH_7VCq7zXxwYy7zFaVLBjYk7QUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "49066202949-12ljctgbanp5knbvulgpspdm2v7g4m5l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "49066202949-4t6gsqb7v438b0ku0qb58sur3put5j34.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.flutterflow.UrbanStreet"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
