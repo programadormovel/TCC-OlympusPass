@@ -1,0 +1,359 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.flutterflow.OlympusPass"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="34" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:4:5-66
+14-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:4:22-64
+15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+15-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:5:5-78
+15-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:5:22-76
+16    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+16-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:6:5-80
+16-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:6:22-78
+17    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+17-->[:geolocator_android] C:\Users\leona\Projects\mobile_developer\AppOlympusPass\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-77
+17-->[:geolocator_android] C:\Users\leona\Projects\mobile_developer\AppOlympusPass\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-74
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\leona\.gradle\caches\transforms-3\9b326d35daa32c3f66f781d34d32cd55\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:26:5-79
+18-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\leona\.gradle\caches\transforms-3\9b326d35daa32c3f66f781d34d32cd55\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:26:22-76
+19
+20    <uses-feature
+20-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\leona\.gradle\caches\transforms-3\0653f0e792851364f00e94bedae59b26\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:26:5-28:35
+21        android:glEsVersion="0x00020000"
+21-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\leona\.gradle\caches\transforms-3\0653f0e792851364f00e94bedae59b26\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:27:9-41
+22        android:required="true" />
+22-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\leona\.gradle\caches\transforms-3\0653f0e792851364f00e94bedae59b26\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:28:9-32
+23
+24    <queries>
+24-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\leona\.gradle\caches\transforms-3\0653f0e792851364f00e94bedae59b26\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:30:5-34:15
+25
+26        <!-- Needs to be explicitly declared on Android R+ -->
+27        <package android:name="com.google.android.apps.maps" />
+27-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\leona\.gradle\caches\transforms-3\0653f0e792851364f00e94bedae59b26\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:33:9-64
+27-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\leona\.gradle\caches\transforms-3\0653f0e792851364f00e94bedae59b26\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:33:18-61
+28    </queries>
+29
+30    <application
+30-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:8:5-62:19
+31        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+31-->[androidx.core:core:1.8.0] C:\Users\leona\.gradle\caches\transforms-3\a39f0511dd96e367afb26dc218315481\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+32        android:debuggable="true"
+33        android:icon="@mipmap/ic_launcher"
+33-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:11:9-43
+34        android:label="OlympusPass"
+34-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:9:9-36
+35        android:requestLegacyExternalStorage="true" >
+35-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:12:9-52
+36        <activity
+36-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:14:9-52:20
+37            android:name="com.flutterflow.OlympusPass.MainActivity"
+37-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:15:13-41
+38            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+38-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:19:13-163
+39            android:exported="true"
+39-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:16:13-36
+40            android:hardwareAccelerated="true"
+40-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:20:13-47
+41            android:launchMode="singleTop"
+41-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:17:13-43
+42            android:theme="@style/LaunchTheme"
+42-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:18:13-47
+43            android:windowSoftInputMode="adjustResize" >
+43-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:21:13-55
+44
+45            <!--
+46                 Specifies an Android theme to apply to this Activity as soon as
+47                 the Android process has started. This theme is visible to the user
+48                 while the Flutter UI initializes. After that, this theme continues
+49                 to determine the Window background behind the Flutter UI.
+50            -->
+51            <meta-data
+51-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:26:13-29:17
+52                android:name="io.flutter.embedding.android.NormalTheme"
+52-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:27:15-70
+53                android:resource="@style/NormalTheme" />
+53-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:28:15-52
+54            <!--
+55                 Displays an Android View that continues showing the launch screen
+56                 Drawable until Flutter paints its first frame, then this splash
+57                 screen fades out. A splash screen is useful to avoid any visual
+58                 gap between the end of Android's launch screen and the painting of
+59                 Flutter's first frame.
+60            -->
+61            <meta-data
+61-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:35:13-38:17
+62                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+62-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:36:15-79
+63                android:resource="@drawable/launch_background" />
+63-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:37:15-61
+64
+65            <intent-filter>
+65-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:39:13-42:29
+66                <action android:name="android.intent.action.MAIN" />
+66-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:40:17-68
+66-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:40:25-66
+67
+68                <category android:name="android.intent.category.LAUNCHER" />
+68-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:41:17-76
+68-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:41:27-74
+69            </intent-filter>
+70            <!-- Deep linking -->
+71            <meta-data
+71-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:44:13-90
+72                android:name="flutter_deeplinking_enabled"
+72-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:44:24-66
+73                android:value="true" />
+73-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:44:67-87
+74
+75            <intent-filter android:autoVerify="true" >
+75-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:45:13-50:29
+75-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:45:28-53
+76                <action android:name="android.intent.action.VIEW" />
+76-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:46:17-69
+76-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:46:25-66
+77
+78                <category android:name="android.intent.category.DEFAULT" />
+78-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:47:17-76
+78-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:47:27-73
+79                <category android:name="android.intent.category.BROWSABLE" />
+79-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:48:17-78
+79-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:48:27-75
+80
+81                <data
+81-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:49:17-85
+82                    android:host="olympuspass.com"
+82-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:49:52-82
+83                    android:scheme="olympuspass" />
+83-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:49:23-51
+84            </intent-filter>
+85        </activity>
+86
+87        <!--
+88             Don't delete the meta-data below.
+89             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+90        -->
+91        <meta-data
+91-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:56:9-58:33
+92            android:name="flutterEmbedding"
+92-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:57:13-44
+93            android:value="2" />
+93-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:58:13-30
+94        <meta-data
+94-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:59:9-123
+95            android:name="com.google.android.geo.API_KEY"
+95-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:59:20-65
+96            android:value="AIzaSyDiC992F2qaGN3FD7jlll9ObhQjb8pbx9Y" />
+96-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:59:66-121
+97
+98        <service
+98-->[:cloud_firestore] C:\Users\leona\Projects\mobile_developer\AppOlympusPass\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
+99            android:name="com.google.firebase.components.ComponentDiscoveryService"
+99-->[:cloud_firestore] C:\Users\leona\Projects\mobile_developer\AppOlympusPass\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:10:18-89
+100            android:directBootAware="true"
+100-->[com.google.firebase:firebase-common:20.3.2] C:\Users\leona\.gradle\caches\transforms-3\f4b1c56e7267c8a34165fab852e5eccd\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:34:13-43
+101            android:exported="false" >
+101-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\leona\.gradle\caches\transforms-3\9b326d35daa32c3f66f781d34d32cd55\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:68:13-37
+102            <meta-data
+102-->[:cloud_firestore] C:\Users\leona\Projects\mobile_developer\AppOlympusPass\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+103                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+103-->[:cloud_firestore] C:\Users\leona\Projects\mobile_developer\AppOlympusPass\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-134
+104                android:value="com.google.firebase.components.ComponentRegistrar" />
+104-->[:cloud_firestore] C:\Users\leona\Projects\mobile_developer\AppOlympusPass\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+105            <meta-data
+105-->[:firebase_auth] C:\Users\leona\Projects\mobile_developer\AppOlympusPass\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+106                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+106-->[:firebase_auth] C:\Users\leona\Projects\mobile_developer\AppOlympusPass\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+107                android:value="com.google.firebase.components.ComponentRegistrar" />
+107-->[:firebase_auth] C:\Users\leona\Projects\mobile_developer\AppOlympusPass\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+108            <meta-data
+108-->[:firebase_core] C:\Users\leona\Projects\mobile_developer\AppOlympusPass\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+109                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+109-->[:firebase_core] C:\Users\leona\Projects\mobile_developer\AppOlympusPass\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+110                android:value="com.google.firebase.components.ComponentRegistrar" />
+110-->[:firebase_core] C:\Users\leona\Projects\mobile_developer\AppOlympusPass\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+111            <meta-data
+111-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\leona\.gradle\caches\transforms-3\9b326d35daa32c3f66f781d34d32cd55\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:69:13-71:85
+112                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+112-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\leona\.gradle\caches\transforms-3\9b326d35daa32c3f66f781d34d32cd55\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:70:17-109
+113                android:value="com.google.firebase.components.ComponentRegistrar" />
+113-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\leona\.gradle\caches\transforms-3\9b326d35daa32c3f66f781d34d32cd55\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:71:17-82
+114            <meta-data
+114-->[com.google.firebase:firebase-firestore:24.6.0] C:\Users\leona\.gradle\caches\transforms-3\2d7f1d14544a3921cbde49724a441917\transformed\jetified-firebase-firestore-24.6.0\AndroidManifest.xml:19:13-21:85
+115                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+115-->[com.google.firebase:firebase-firestore:24.6.0] C:\Users\leona\.gradle\caches\transforms-3\2d7f1d14544a3921cbde49724a441917\transformed\jetified-firebase-firestore-24.6.0\AndroidManifest.xml:20:17-111
+116                android:value="com.google.firebase.components.ComponentRegistrar" />
+116-->[com.google.firebase:firebase-firestore:24.6.0] C:\Users\leona\.gradle\caches\transforms-3\2d7f1d14544a3921cbde49724a441917\transformed\jetified-firebase-firestore-24.6.0\AndroidManifest.xml:21:17-82
+117        </service>
+118        <service
+118-->[:geolocator_android] C:\Users\leona\Projects\mobile_developer\AppOlympusPass\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:9-16:56
+119            android:name="com.baseflow.geolocator.GeolocatorLocationService"
+119-->[:geolocator_android] C:\Users\leona\Projects\mobile_developer\AppOlympusPass\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-77
+120            android:enabled="true"
+120-->[:geolocator_android] C:\Users\leona\Projects\mobile_developer\AppOlympusPass\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-35
+121            android:exported="false"
+121-->[:geolocator_android] C:\Users\leona\Projects\mobile_developer\AppOlympusPass\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-37
+122            android:foregroundServiceType="location" />
+122-->[:geolocator_android] C:\Users\leona\Projects\mobile_developer\AppOlympusPass\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-53
+123
+124        <activity
+124-->[:url_launcher_android] C:\Users\leona\Projects\mobile_developer\AppOlympusPass\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-13:74
+125            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+125-->[:url_launcher_android] C:\Users\leona\Projects\mobile_developer\AppOlympusPass\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-74
+126            android:exported="false"
+126-->[:url_launcher_android] C:\Users\leona\Projects\mobile_developer\AppOlympusPass\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-37
+127            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+127-->[:url_launcher_android] C:\Users\leona\Projects\mobile_developer\AppOlympusPass\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-71
+128        <activity
+128-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\leona\.gradle\caches\transforms-3\9b326d35daa32c3f66f781d34d32cd55\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:29:9-46:20
+129            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+129-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\leona\.gradle\caches\transforms-3\9b326d35daa32c3f66f781d34d32cd55\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:30:13-80
+130            android:excludeFromRecents="true"
+130-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\leona\.gradle\caches\transforms-3\9b326d35daa32c3f66f781d34d32cd55\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:31:13-46
+131            android:exported="true"
+131-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\leona\.gradle\caches\transforms-3\9b326d35daa32c3f66f781d34d32cd55\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:32:13-36
+132            android:launchMode="singleTask"
+132-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\leona\.gradle\caches\transforms-3\9b326d35daa32c3f66f781d34d32cd55\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:33:13-44
+133            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+133-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\leona\.gradle\caches\transforms-3\9b326d35daa32c3f66f781d34d32cd55\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:34:13-72
+134            <intent-filter>
+134-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\leona\.gradle\caches\transforms-3\9b326d35daa32c3f66f781d34d32cd55\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:35:13-45:29
+135                <action android:name="android.intent.action.VIEW" />
+135-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:46:17-69
+135-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:46:25-66
+136
+137                <category android:name="android.intent.category.DEFAULT" />
+137-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:47:17-76
+137-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:47:27-73
+138                <category android:name="android.intent.category.BROWSABLE" />
+138-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:48:17-78
+138-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:48:27-75
+139
+140                <data
+140-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:49:17-85
+141                    android:host="firebase.auth"
+141-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:49:52-82
+142                    android:path="/"
+143                    android:scheme="genericidp" />
+143-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:49:23-51
+144            </intent-filter>
+145        </activity>
+146        <activity
+146-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\leona\.gradle\caches\transforms-3\9b326d35daa32c3f66f781d34d32cd55\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:47:9-64:20
+147            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+147-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\leona\.gradle\caches\transforms-3\9b326d35daa32c3f66f781d34d32cd55\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:48:13-79
+148            android:excludeFromRecents="true"
+148-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\leona\.gradle\caches\transforms-3\9b326d35daa32c3f66f781d34d32cd55\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:49:13-46
+149            android:exported="true"
+149-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\leona\.gradle\caches\transforms-3\9b326d35daa32c3f66f781d34d32cd55\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:50:13-36
+150            android:launchMode="singleTask"
+150-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\leona\.gradle\caches\transforms-3\9b326d35daa32c3f66f781d34d32cd55\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:51:13-44
+151            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+151-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\leona\.gradle\caches\transforms-3\9b326d35daa32c3f66f781d34d32cd55\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:52:13-72
+152            <intent-filter>
+152-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\leona\.gradle\caches\transforms-3\9b326d35daa32c3f66f781d34d32cd55\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:53:13-63:29
+153                <action android:name="android.intent.action.VIEW" />
+153-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:46:17-69
+153-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:46:25-66
+154
+155                <category android:name="android.intent.category.DEFAULT" />
+155-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:47:17-76
+155-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:47:27-73
+156                <category android:name="android.intent.category.BROWSABLE" />
+156-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:48:17-78
+156-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:48:27-75
+157
+158                <data
+158-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:49:17-85
+159                    android:host="firebase.auth"
+159-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:49:52-82
+160                    android:path="/"
+161                    android:scheme="recaptcha" />
+161-->C:\Users\leona\Projects\mobile_developer\AppOlympusPass\android\app\src\main\AndroidManifest.xml:49:23-51
+162            </intent-filter>
+163        </activity>
+164
+165        <uses-library
+165-->[androidx.window:window:1.0.0-beta04] C:\Users\leona\.gradle\caches\transforms-3\3547045148f823ae82ba5f00da62432e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+166            android:name="androidx.window.extensions"
+166-->[androidx.window:window:1.0.0-beta04] C:\Users\leona\.gradle\caches\transforms-3\3547045148f823ae82ba5f00da62432e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+167            android:required="false" />
+167-->[androidx.window:window:1.0.0-beta04] C:\Users\leona\.gradle\caches\transforms-3\3547045148f823ae82ba5f00da62432e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+168        <uses-library
+168-->[androidx.window:window:1.0.0-beta04] C:\Users\leona\.gradle\caches\transforms-3\3547045148f823ae82ba5f00da62432e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+169            android:name="androidx.window.sidecar"
+169-->[androidx.window:window:1.0.0-beta04] C:\Users\leona\.gradle\caches\transforms-3\3547045148f823ae82ba5f00da62432e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+170            android:required="false" />
+170-->[androidx.window:window:1.0.0-beta04] C:\Users\leona\.gradle\caches\transforms-3\3547045148f823ae82ba5f00da62432e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+171
+172        <provider
+172-->[com.google.firebase:firebase-common:20.3.2] C:\Users\leona\.gradle\caches\transforms-3\f4b1c56e7267c8a34165fab852e5eccd\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:25:9-30:39
+173            android:name="com.google.firebase.provider.FirebaseInitProvider"
+173-->[com.google.firebase:firebase-common:20.3.2] C:\Users\leona\.gradle\caches\transforms-3\f4b1c56e7267c8a34165fab852e5eccd\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:26:13-77
+174            android:authorities="com.flutterflow.OlympusPass.firebaseinitprovider"
+174-->[com.google.firebase:firebase-common:20.3.2] C:\Users\leona\.gradle\caches\transforms-3\f4b1c56e7267c8a34165fab852e5eccd\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:27:13-72
+175            android:directBootAware="true"
+175-->[com.google.firebase:firebase-common:20.3.2] C:\Users\leona\.gradle\caches\transforms-3\f4b1c56e7267c8a34165fab852e5eccd\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:28:13-43
+176            android:exported="false"
+176-->[com.google.firebase:firebase-common:20.3.2] C:\Users\leona\.gradle\caches\transforms-3\f4b1c56e7267c8a34165fab852e5eccd\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:29:13-37
+177            android:initOrder="100" /> <!-- Needs to be explicitly declared on P+ -->
+177-->[com.google.firebase:firebase-common:20.3.2] C:\Users\leona\.gradle\caches\transforms-3\f4b1c56e7267c8a34165fab852e5eccd\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:30:13-36
+178        <uses-library
+178-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\leona\.gradle\caches\transforms-3\0653f0e792851364f00e94bedae59b26\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:39:9-41:40
+179            android:name="org.apache.http.legacy"
+179-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\leona\.gradle\caches\transforms-3\0653f0e792851364f00e94bedae59b26\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:40:13-50
+180            android:required="false" />
+180-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\leona\.gradle\caches\transforms-3\0653f0e792851364f00e94bedae59b26\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:41:13-37
+181
+182        <activity
+182-->[com.google.android.gms:play-services-auth:20.4.1] C:\Users\leona\.gradle\caches\transforms-3\1e872a2f80685e6a488770ecfb5a5bc8\transformed\jetified-play-services-auth-20.4.1\AndroidManifest.xml:23:9-27:75
+183            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+183-->[com.google.android.gms:play-services-auth:20.4.1] C:\Users\leona\.gradle\caches\transforms-3\1e872a2f80685e6a488770ecfb5a5bc8\transformed\jetified-play-services-auth-20.4.1\AndroidManifest.xml:24:13-93
+184            android:excludeFromRecents="true"
+184-->[com.google.android.gms:play-services-auth:20.4.1] C:\Users\leona\.gradle\caches\transforms-3\1e872a2f80685e6a488770ecfb5a5bc8\transformed\jetified-play-services-auth-20.4.1\AndroidManifest.xml:25:13-46
+185            android:exported="false"
+185-->[com.google.android.gms:play-services-auth:20.4.1] C:\Users\leona\.gradle\caches\transforms-3\1e872a2f80685e6a488770ecfb5a5bc8\transformed\jetified-play-services-auth-20.4.1\AndroidManifest.xml:26:13-37
+186            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+186-->[com.google.android.gms:play-services-auth:20.4.1] C:\Users\leona\.gradle\caches\transforms-3\1e872a2f80685e6a488770ecfb5a5bc8\transformed\jetified-play-services-auth-20.4.1\AndroidManifest.xml:27:13-72
+187        <!--
+188            Service handling Google Sign-In user revocation. For apps that do not integrate with
+189            Google Sign-In, this service will never be started.
+190        -->
+191        <service
+191-->[com.google.android.gms:play-services-auth:20.4.1] C:\Users\leona\.gradle\caches\transforms-3\1e872a2f80685e6a488770ecfb5a5bc8\transformed\jetified-play-services-auth-20.4.1\AndroidManifest.xml:33:9-37:51
+192            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+192-->[com.google.android.gms:play-services-auth:20.4.1] C:\Users\leona\.gradle\caches\transforms-3\1e872a2f80685e6a488770ecfb5a5bc8\transformed\jetified-play-services-auth-20.4.1\AndroidManifest.xml:34:13-89
+193            android:exported="true"
+193-->[com.google.android.gms:play-services-auth:20.4.1] C:\Users\leona\.gradle\caches\transforms-3\1e872a2f80685e6a488770ecfb5a5bc8\transformed\jetified-play-services-auth-20.4.1\AndroidManifest.xml:35:13-36
+194            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+194-->[com.google.android.gms:play-services-auth:20.4.1] C:\Users\leona\.gradle\caches\transforms-3\1e872a2f80685e6a488770ecfb5a5bc8\transformed\jetified-play-services-auth-20.4.1\AndroidManifest.xml:36:13-107
+195            android:visibleToInstantApps="true" />
+195-->[com.google.android.gms:play-services-auth:20.4.1] C:\Users\leona\.gradle\caches\transforms-3\1e872a2f80685e6a488770ecfb5a5bc8\transformed\jetified-play-services-auth-20.4.1\AndroidManifest.xml:37:13-48
+196
+197        <activity
+197-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\leona\.gradle\caches\transforms-3\9aacd92044d3c0fced5d96d094537c9f\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+198            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+198-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\leona\.gradle\caches\transforms-3\9aacd92044d3c0fced5d96d094537c9f\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+199            android:exported="false"
+199-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\leona\.gradle\caches\transforms-3\9aacd92044d3c0fced5d96d094537c9f\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+200            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+200-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\leona\.gradle\caches\transforms-3\9aacd92044d3c0fced5d96d094537c9f\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+201
+202        <meta-data
+202-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\leona\.gradle\caches\transforms-3\45b55c87021c9ab508d82f4ad609d95c\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+203            android:name="com.google.android.gms.version"
+203-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\leona\.gradle\caches\transforms-3\45b55c87021c9ab508d82f4ad609d95c\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+204            android:value="@integer/google_play_services_version" />
+204-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\leona\.gradle\caches\transforms-3\45b55c87021c9ab508d82f4ad609d95c\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+205    </application>
+206
+207</manifest>

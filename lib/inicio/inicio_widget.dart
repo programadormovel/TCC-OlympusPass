@@ -129,68 +129,109 @@ class _InicioWidgetState extends State<InicioWidget>
 
   @override
   Widget build(BuildContext context) {
+    var tamanho = MediaQuery.sizeOf(context);
+    var largura = tamanho.width;
+    var altura = tamanho.height;
+
     return Scaffold(
       key: scaffoldKey,
       backgroundColor: Color(0xEB000000),
       body: Container(
-        width: MediaQuery.sizeOf(context).width * 1.0,
-        height: MediaQuery.sizeOf(context).height * 1.0,
+        padding: EdgeInsets.all(8.0),
+        width: largura * 0.2,
+        height: altura * 0.8,
         decoration: BoxDecoration(
           color: Color(0xD5000000),
           image: DecorationImage(
-            fit: BoxFit.fill,
+            fit: BoxFit.cover,
             image: Image.asset(
               'assets/images/bg_login@2x.png',
+              width: largura * 0.5,
             ).image,
           ),
         ),
         child: Padding(
           padding: EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
-          child: Column(
-            mainAxisSize: MainAxisSize.max,
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Expanded(
-                child: Row(
-                  mainAxisSize: MainAxisSize.max,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(55.0),
-                      child: Image.asset(
-                        'assets/images/Splash_Olympus_Pass_2-removebg-preview.png',
-                        width: 380.0,
-                        fit: BoxFit.fitHeight,
-                      ),
-                    ).animateOnPageLoad(
-                        animationsMap['imageOnPageLoadAnimation']!),
-                  ],
+          child: SingleChildScrollView(
+            scrollDirection: Axis.vertical,
+            child: Column(
+              mainAxisSize: MainAxisSize.max,
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Expanded(
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(55.0),
+                        child: Image.asset(
+                          'assets/images/Splash_Olympus_Pass_2-removebg-preview.png',
+                          width: largura * 0.5,
+                          fit: BoxFit.fitWidth,
+                        ),
+                      ).animateOnPageLoad(
+                          animationsMap['imageOnPageLoadAnimation']!),
+                    ],
+                  ),
                 ),
-              ),
-              Expanded(
-                child: Row(
-                  mainAxisSize: MainAxisSize.max,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Expanded(
-                      child: Padding(
-                        padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
-                        child: Column(
-                          mainAxisSize: MainAxisSize.max,
-                          children: [
-                            Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 2.0, 0.0, 20.0),
-                              child: FFButtonWidget(
+                Expanded(
+                  child: Row(
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Expanded(
+                        child: Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              0.0, 20.0, 0.0, 0.0),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 2.0, 0.0, 20.0),
+                                child: FFButtonWidget(
+                                  onPressed: () async {
+                                    context.pushNamed('Cadastro');
+                                  },
+                                  text: FFLocalizations.of(context).getText(
+                                    '8snixyv3' /* Cadastrar-se */,
+                                  ),
+                                  options: FFButtonOptions(
+                                    width: 250.0,
+                                    height: 80.0,
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 0.0, 0.0, 0.0),
+                                    iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 0.0, 0.0, 0.0),
+                                    color: Color(0xE509AD35),
+                                    textStyle: FlutterFlowTheme.of(context)
+                                        .titleSmall
+                                        .override(
+                                          fontFamily: 'Rubik',
+                                          color: Colors.white,
+                                          fontSize: 20.0,
+                                          fontWeight: FontWeight.w600,
+                                        ),
+                                    elevation: 3.0,
+                                    borderSide: BorderSide(
+                                      color: Colors.transparent,
+                                      width: 1.0,
+                                    ),
+                                    borderRadius: BorderRadius.circular(8.0),
+                                  ),
+                                ).animateOnPageLoad(animationsMap[
+                                    'buttonOnPageLoadAnimation1']!),
+                              ),
+                              FFButtonWidget(
                                 onPressed: () async {
-                                  context.pushNamed('Cadastro');
+                                  context.pushNamed('Login');
                                 },
                                 text: FFLocalizations.of(context).getText(
-                                  '8snixyv3' /* Cadastrar-se */,
+                                  'ouwkeqsk' /* Login */,
                                 ),
                                 options: FFButtonOptions(
                                   width: 250.0,
@@ -199,14 +240,14 @@ class _InicioWidgetState extends State<InicioWidget>
                                       0.0, 0.0, 0.0, 0.0),
                                   iconPadding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
-                                  color: Color(0xE509AD35),
+                                  color: Colors.white,
                                   textStyle: FlutterFlowTheme.of(context)
                                       .titleSmall
                                       .override(
                                         fontFamily: 'Rubik',
-                                        color: Colors.white,
+                                        color: Color(0xFF09AD35),
                                         fontSize: 20.0,
-                                        fontWeight: FontWeight.w600,
+                                        fontWeight: FontWeight.bold,
                                       ),
                                   elevation: 3.0,
                                   borderSide: BorderSide(
@@ -216,65 +257,34 @@ class _InicioWidgetState extends State<InicioWidget>
                                   borderRadius: BorderRadius.circular(8.0),
                                 ),
                               ).animateOnPageLoad(
-                                  animationsMap['buttonOnPageLoadAnimation1']!),
-                            ),
-                            FFButtonWidget(
-                              onPressed: () async {
-                                context.pushNamed('Login');
-                              },
-                              text: FFLocalizations.of(context).getText(
-                                'ouwkeqsk' /* Login */,
-                              ),
-                              options: FFButtonOptions(
-                                width: 250.0,
-                                height: 80.0,
+                                  animationsMap['buttonOnPageLoadAnimation2']!),
+                              Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
-                                    0.0, 0.0, 0.0, 0.0),
-                                iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                    0.0, 0.0, 0.0, 0.0),
-                                color: Colors.white,
-                                textStyle: FlutterFlowTheme.of(context)
-                                    .titleSmall
-                                    .override(
-                                      fontFamily: 'Rubik',
-                                      color: Color(0xFF09AD35),
-                                      fontSize: 20.0,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                elevation: 3.0,
-                                borderSide: BorderSide(
-                                  color: Colors.transparent,
-                                  width: 1.0,
+                                    0.0, 100.0, 0.0, 0.0),
+                                child: Text(
+                                  FFLocalizations.of(context).getText(
+                                    'sord7xnb' /* Copyrighting© Olympus Pass */,
+                                  ),
+                                  style: FlutterFlowTheme.of(context)
+                                      .bodyMedium
+                                      .override(
+                                        fontFamily: 'Rubik',
+                                        color:
+                                            FlutterFlowTheme.of(context).white,
+                                        fontSize: 17.0,
+                                        fontWeight: FontWeight.w600,
+                                      ),
                                 ),
-                                borderRadius: BorderRadius.circular(8.0),
                               ),
-                            ).animateOnPageLoad(
-                                animationsMap['buttonOnPageLoadAnimation2']!),
-                            Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 100.0, 0.0, 0.0),
-                              child: Text(
-                                FFLocalizations.of(context).getText(
-                                  'sord7xnb' /* Copyrighting© Olympus Pass */,
-                                ),
-                                style: FlutterFlowTheme.of(context)
-                                    .bodyMedium
-                                    .override(
-                                      fontFamily: 'Rubik',
-                                      color: FlutterFlowTheme.of(context).white,
-                                      fontSize: 17.0,
-                                      fontWeight: FontWeight.w600,
-                                    ),
-                              ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),
