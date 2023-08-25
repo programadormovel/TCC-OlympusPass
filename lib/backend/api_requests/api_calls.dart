@@ -47,18 +47,14 @@ class LoginCall {
     String? email = '',
     String? senha = '',
   }) {
-    final body = '''
-{'email':'domtec@gmail.com', 'senha':'123'}''';
     return ApiManager.instance.makeApiCall(
       callName: 'login',
       apiUrl: '/login',
-      callType: ApiCallType.POST,
+      callType: ApiCallType.GET,
       headers: {
         'Content-Type': 'application/json',
       },
       params: {},
-      body: body,
-      bodyType: BodyType.JSON,
       returnBody: true,
       encodeBodyUtf8: false,
       decodeUtf8: false,

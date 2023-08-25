@@ -401,7 +401,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': '',
     },
     'buy4juws': {
-      'pt': 'Enviar Link',
+      'pt': 'Enviar SMS',
       'en': '',
     },
     '1uqnwpbg': {
@@ -494,8 +494,40 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // MinhaConta
   {
-    'yoi6cyk0': {
-      'pt': 'Bem Vindo,',
+    '49mu4e24': {
+      'pt': 'Perfil do Aluno',
+      'en': '',
+    },
+    'xn9lw49v': {
+      'pt': 'Aqui estão seus dados e informações',
+      'en': '',
+    },
+    'xm5ezjb1': {
+      'pt': 'Plano Premium',
+      'en': '',
+    },
+    'pxltxxmj': {
+      'pt': 'Meus Treinos',
+      'en': '',
+    },
+    'v9smu92q': {
+      'pt': 'Alterar Senha',
+      'en': '',
+    },
+    '5odpmtbp': {
+      'pt': 'Ajuda e Suporte',
+      'en': '',
+    },
+    'hy6zapgc': {
+      'pt': 'Modo Claro',
+      'en': '',
+    },
+    'v58uapl8': {
+      'pt': 'Modo Escuro',
+      'en': '',
+    },
+    'rj9ao452': {
+      'pt': 'Voltar',
       'en': '',
     },
     '88svcq0u': {
@@ -544,6 +576,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // LocalizacaoAcademia
   {
+    '96yzkbgj': {
+      'pt': 'Localização da Academia',
+      'en': '',
+    },
     'oa8e5015': {
       'pt': 'Nosso Endereço',
       'en': '',
@@ -557,10 +593,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Obter Rota no Mapa',
       'en': '',
     },
-    '96yzkbgj': {
-      'pt': 'Localização da Academia',
-      'en': '',
-    },
     'sqfgiwul': {
       'pt': 'Home',
       'en': '',
@@ -569,7 +601,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // SobreNos
   {
     '5r1yb7yb': {
-      'pt': 'Confirme seu Código',
+      'pt': 'Olympus Pass',
       'en': '',
     },
     'sp73mhnh': {
@@ -577,11 +609,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': '',
     },
     'gh0uhn54': {
-      'pt': 'Confirmar e Continuar',
+      'pt': 'Voltar Para Menu',
       'en': '',
     },
     'nde85bnl': {
-      'pt': 'Insira o Código Abaixo:',
+      'pt': 'Sobre Nós',
       'en': '',
     },
     '7mnvg47r': {
@@ -624,6 +656,14 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': '',
     },
     '6q1vb2vg': {
+      'pt': '',
+      'en': '',
+    },
+    '984rg8dc': {
+      'pt': '',
+      'en': '',
+    },
+    'yonly3ci': {
       'pt': '',
       'en': '',
     },

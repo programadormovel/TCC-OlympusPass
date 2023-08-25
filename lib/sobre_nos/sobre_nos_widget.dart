@@ -1,7 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'package:pin_code_fields/pin_code_fields.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -47,15 +46,15 @@ class _SobreNosWidgetState extends State<SobreNosWidget> {
           backgroundColor: Color(0xFF09AD35),
           automaticallyImplyLeading: false,
           title: Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+            padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
             child: Text(
               FFLocalizations.of(context).getText(
-                'nde85bnl' /* Insira o Código Abaixo: */,
+                'nde85bnl' /* Sobre Nós */,
               ),
               style: FlutterFlowTheme.of(context).bodyMedium.override(
                     fontFamily: 'Outfit',
                     color: Colors.white,
-                    fontSize: 20.0,
+                    fontSize: 30.0,
                     fontWeight: FontWeight.w600,
                   ),
             ),
@@ -75,12 +74,12 @@ class _SobreNosWidgetState extends State<SobreNosWidget> {
                 children: [
                   Text(
                     FFLocalizations.of(context).getText(
-                      '5r1yb7yb' /* Confirme seu Código */,
+                      '5r1yb7yb' /* Olympus Pass */,
                     ),
                     style: FlutterFlowTheme.of(context).headlineSmall.override(
                           fontFamily: 'Rubik',
                           color: Colors.white,
-                          fontSize: 30.0,
+                          fontSize: 40.0,
                           fontWeight: FontWeight.w600,
                         ),
                   ),
@@ -98,49 +97,6 @@ class _SobreNosWidgetState extends State<SobreNosWidget> {
                             fontSize: 18.0,
                             fontWeight: FontWeight.w600,
                           ),
-                    ),
-                  ),
-                  Padding(
-                    padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 50.0, 0.0, 0.0),
-                    child: PinCodeTextField(
-                      autoDisposeControllers: false,
-                      appContext: context,
-                      length: 4,
-                      textStyle:
-                          FlutterFlowTheme.of(context).titleSmall.override(
-                                fontFamily: 'Outfit',
-                                color: Color(0xFF4B39EF),
-                                fontSize: 16.0,
-                                fontWeight: FontWeight.w500,
-                              ),
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      enableActiveFill: false,
-                      autoFocus: true,
-                      enablePinAutofill: true,
-                      errorTextSpace: 16.0,
-                      showCursor: true,
-                      cursorColor: Colors.black,
-                      obscureText: false,
-                      hintCharacter: '-',
-                      pinTheme: PinTheme(
-                        fieldHeight: 60.0,
-                        fieldWidth: 60.0,
-                        borderWidth: 2.0,
-                        borderRadius: BorderRadius.circular(12.0),
-                        shape: PinCodeFieldShape.box,
-                        activeColor: Colors.black,
-                        inactiveColor: Colors.black,
-                        selectedColor: Colors.black,
-                        activeFillColor: Colors.black,
-                        inactiveFillColor: Colors.black,
-                        selectedFillColor: Colors.black,
-                      ),
-                      controller: _model.pinCodeController,
-                      onChanged: (_) {},
-                      autovalidateMode: AutovalidateMode.onUserInteraction,
-                      validator: _model.pinCodeControllerValidator
-                          .asValidator(context),
                     ),
                   ),
                 ],
@@ -164,7 +120,7 @@ class _SobreNosWidgetState extends State<SobreNosWidget> {
                   );
                 },
                 text: FFLocalizations.of(context).getText(
-                  'gh0uhn54' /* Confirmar e Continuar */,
+                  'gh0uhn54' /* Voltar Para Menu */,
                 ),
                 options: FFButtonOptions(
                   width: 300.0,

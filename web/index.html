@@ -26,39 +26,57 @@
   
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="icon" href="Splash_Olympus_Pass_2.png" sizes="any"/>
+  
 
   <!-- Open Graph & SEO tags -->
   <meta property="og:title" content="Olympus Pass | Gym App" />
   <meta property="og:description" content="Olympus Pass is an System/ App for Gym Start-ups developed with the objective to become more practice and easy the access of the gyms and have your training everytime avaiable online for Android & IOS." />
-  <meta property="og:image" content="/assets/assets/images/6670fd9d-b57a-486b-a4a7-e124e9056a71.jpg" /> 
+  <meta property="og:image" content="/assets/assets/images/Splash_Olympus_Pass_2.png" /> 
   <meta name="twitter:title" content="Olympus Pass | Gym App" />
   <meta name="twitter:description" content="Olympus Pass is an System/ App for Gym Start-ups developed with the objective to become more practice and easy the access of the gyms and have your training everytime avaiable online for Android & IOS." />
-  <meta name="twitter:image" content="/assets/assets/images/6670fd9d-b57a-486b-a4a7-e124e9056a71.jpg" />
+  <meta name="twitter:image" content="/assets/assets/images/Splash_Olympus_Pass_2.png" />
   <meta name="twitter:card" content="summary_large_image" />
 
   <title> Olympus Pass | Gym App </title>
   <meta name="description" content="Olympus Pass is an System/ App for Gym Start-ups developed with the objective to become more practice and easy the access of the gyms and have your training everytime avaiable online for Android & IOS." />
     
 
+  <!-- Status Bar color in Safari browser (iOS) and PWA -->
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#04a24c">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)"  content="#04a24c">
+
   <link rel="manifest" href="manifest.json">
+  <script>
+    // The value below is injected by flutter build, do not touch.
+    var serviceWorkerVersion = null;
+  </script>
+  <!-- This script adds the flutter initialization JS code -->
+  <script src="flutter.js" defer></script>
 </head>
 <body>
-  <!-- This script installs service_worker.js to provide PWA functionality to
-       application. For more information, see:
-       https://developers.google.com/web/fundamentals/primers/service-workers -->
   <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('flutter-first-frame', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js');
-      });
-    }
     
+    window.addEventListener('load', function (ev) {
+      // Download main.dart.js
+      _flutter.loader.loadEntrypoint({
+        entrypointUrl: 'main.dart.js',
+        serviceWorker: {
+          serviceWorkerUrl: 'flutter_service_worker.js?v=',
+          serviceWorkerVersion: serviceWorkerVersion,
+        },
+        onEntrypointLoaded: async function(engineInitializer) {
+          // Initialize the Flutter engine
+          let appRunner = await engineInitializer.initializeEngine();
+          // Run the app
+          await appRunner.runApp();
+        }
+      });
+    });
   </script>
   
   
   
   
-  <script src="main.dart.js" type="application/javascript"></script>
 </body>
 </html>

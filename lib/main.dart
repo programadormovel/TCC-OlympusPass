@@ -78,7 +78,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      title: 'Olympus Pass | Gym Access App |',
+      title: 'Olympus Pass | Gym App',
       localizationsDelegates: [
         FFLocalizationsDelegate(),
         GlobalMaterialLocalizations.delegate,
@@ -90,8 +90,38 @@ class _MyAppState extends State<MyApp> {
         Locale('pt'),
         Locale('en'),
       ],
-      theme: ThemeData(brightness: Brightness.light),
-      darkTheme: ThemeData(brightness: Brightness.dark),
+      theme: ThemeData(
+        brightness: Brightness.light,
+        scrollbarTheme: ScrollbarThemeData(
+          thumbVisibility: MaterialStateProperty.all(false),
+          interactive: true,
+          thumbColor: MaterialStateProperty.resolveWith((states) {
+            if (states.contains(MaterialState.dragged)) {
+              return Color(4278824245);
+            }
+            if (states.contains(MaterialState.hovered)) {
+              return Color(4278824245);
+            }
+            return Color(4278824245);
+          }),
+        ),
+      ),
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+        scrollbarTheme: ScrollbarThemeData(
+          thumbVisibility: MaterialStateProperty.all(false),
+          interactive: true,
+          thumbColor: MaterialStateProperty.resolveWith((states) {
+            if (states.contains(MaterialState.dragged)) {
+              return Color(4278824245);
+            }
+            if (states.contains(MaterialState.hovered)) {
+              return Color(4278824245);
+            }
+            return Color(4278824245);
+          }),
+        ),
+      ),
       themeMode: _themeMode,
       routerConfig: _router,
     );
